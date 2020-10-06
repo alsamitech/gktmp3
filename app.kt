@@ -97,12 +97,10 @@ private fun createAndShowGUI() {
 fun main() {
     EventQueue.invokeLater(::createAndShowGUI)
 }
-The example shows thirteen JLabel components; each of the labels has a different background colour. JLabel is usually used to display text; but it can display colours, too.
 
 val stdCols = arrayOf<Color>(Color.black, Color.blue, Color.cyan, 
     Color.darkGray, Color.gray, Color.green, Color.lightGray, Color.magenta, 
     Color.orange, Color.pink, Color.red, Color.white, Color.yellow)
-Here we have an array of the built-in colour values.
 
 val labels = stdCols.map {
     JLabel("", null, LEADING).apply {
